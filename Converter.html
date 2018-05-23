@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Converter</title>
+	<script type="text/javascript">
+		function check() 
+		{
+			result=(one.value=="ck")?parseInt(val.value)+273:(one.value=="cf")?parseInt(val.value)+30:(one.value=="fc")?parseInt(val.value)-30:(one.value=="gk")?parseInt(val.value)*1000:(one.value=="kg")?parseInt(val.value)/1000:(one.value=="km")?parseInt(val.value)*1000:(one.value=="mk")?parseInt(val.value)/1000:alert ("no")
+		res.value=result;
+		}
+	</script>
+</head>
+<body>
+	<table border="1" align="center">
+		<tr><th><H1>COVERTER</H1></th></tr>
+		<tr>
+			<td>
+				<select id="one">
+					<option value="ck">Temp(C - K)</option>
+					<option value="cf">Temp(C - F)</option>
+					<option value="fc">Temp(F - C)</option>
+					<option value="gk">Weight(G - K)</option>
+					<option value="kg">Weight(K - G)</option>
+					<option value="km">Distance(K - M)</option>
+					<option value="mk">Distance(M - K)</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Value: <input type="text" name="" id="val">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				Result: <input type="text" name="" id="res">
+			</td>			
+		</tr>
+		<tr>
+			<td>
+				<input type="button" name="" value="Convert" onclick="check()">
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

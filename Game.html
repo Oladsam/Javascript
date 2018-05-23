@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Push Game</title>
+	<script>
+		function pusher() 
+		{
+
+			p2.value=persInt(p1.value)+ Math.random()*10;
+
+		}
+
+		function pusher2() 
+		{
+			p3.value=persInt(p2.value)+ Math.random()*10;
+
+		}
+
+		function pusher3() 
+		{
+			p4.value=perseInt(p3.value)+ Math.random()*10;
+
+			if (p4.value < 18 && p4.value <24) 
+			{
+				alert('yeeeee')
+			}
+			else
+			{
+				alert('booooo')
+			}
+		}
+
+
+	</script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>
+				<input type="text" name="" id="p1">
+			</td>
+			<td>
+				<input type="text" name="" id="p2">
+			</td>
+			<td>
+				<input type="text" name="" id="p3">
+			</td>
+			<td>
+				<input type="text" name="" id="p4">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<input type="button" name="" value="Push >>" onclick="pusher()">
+			</td>
+			<td>
+				<input type="button" name="" value="Push >>" onclick="pusher2()">
+			</td>
+			<td>
+				<input type="button" name="" value="Push >>" onclick="pusher3()">
+			</td>
+		</tr>
+	</table>
+
+</body>
+</html>
