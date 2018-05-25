@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>mobile phone</title>
+	<script type="text/javascript">
+	var u;
+	var val;
+
+		function button(u) {
+			
+			scrn.value += u;
+
+
+		}
+		function home ()
+		{
+			val=scrn.value;
+			if (val == '*123#')
+			 {
+			 	scrn.value= "1.Account Information \n2.Tariff Plan Migration \n3. Data Services \n4. Roaming & Int'l Offers \n5. My services \n6. Extra Time \n7. More \n Enter 1,2,3....7 to proceed";
+			}
+			else if (scrn.value=="1") {scrn.value="My Tools \n1. My Number \n2. My tariff Plan \N3. My Account Balance \n4. My Data Balance \n5. End of Call Message \n0. Back \n00. Main menue"}
+			else if (scrn.value=="2") {scrn.value="\n1. Bwta Talk \n2. Pulse \N3. XtralSpecial \n0. Back \n00. Main menue"} 
+			else if (scrn.value=="3") {scrn.value="\n1. Buy Datal Plans \n2. Buy XtraValue Bundle \n3. Buy Goody Bag \n4. Check Balance \n5. Roaming & Int'l Offers \n6. XtraTime/Bytes \n7. Dat Gift \n8. YouTube Pack"}
+			else if (scrn.value=="4") {scrn.value="\n1. HelloWorld Roaming Offers \n2. Super Roaming(Free Incoming Roaming) \n3. International Calling Bundle \n0. Back \n00. Main menue"}
+			else if (scrn.value=="5") {scrn.value="Welcome to the MTN Content Services Menu \nReply with a Number to Manage your \n1. Active services \n2. New Services \N3. Unconfiermed Services \n0. Back \n00. Main menue"}
+			else if (scrn.value=="6") {scrn.value="Welcome to MTN XtralTime \n1. Eligibility Status \n2. Request Data(XtraByte) \n0. Back \n00. Main menue"}
+			
+		}
+
+
+		function back() 
+		{
+			scrn.value=''
+		}
+		
+
+	 
+
+	</script>
+
+	<style>
+		form{
+			border:7px solid green;
+			width: 200px;
+			height: 320px;
+			border-radius: 10px;
+		}
+		textarea{
+			width: 195px;
+			height: 150px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<textarea id="scrn"></textarea>
+		<input type="button" name="" value="-" style="width: 70px" onclick="back()">
+		
+		<input type="button" name="" value="-" style="width: 60px;float: right;"><br>
+
+		<input type="button" name="" value="[" style="width: 70px" onclick="home('')">
+		<input type="button" name="" value="ok" style="width: 60px;height: 50px;margin-top: -20px">
+		<input type="button" name="" value="-" style="width: 60px"><br>
+
+
+		<input type="button" name="" value="1" style="width: 70px" onclick="button('1')">
+		<input type="button" name="" value="2 ABC" style="width: 60px" onclick="button('2')">
+		<input type="button" name="" value="3DEF" style="width: 60px" onclick="button('3')"><br>
+
+		<input type="button" name="" value="4GHI" style="width: 70px" onclick="button('4')">
+		<input type="button" name="" value="5JKL" style="width: 60px" onclick="button('5')">
+		<input type="button" name="" value="6MNO" style="width: 60px" onclick="button('6')"><br>
+
+		<input type="button" name="" value="7PQRS" style="width: 70px" onclick="button('7')">
+		<input type="button" name="" value="8TUV" style="width: 60px" onclick="button('8')">
+		<input type="button" name="" value="9WXYZ" style="width: 60px" onclick="button('9')"><br>
+
+		<input type="button" name="" value="*" style="width: 70px" onclick="button('*')">
+		<input type="button" name="" value="0" style="width: 60px" onclick="button('0')">
+		<input type="button" name="" value="#" style="width: 60px" onclick="button('#')"><br>
+	</form>	
+</body>
+</html>

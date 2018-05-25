@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Debuging</title>
+	<script type="text/javascript">
+		
+		var var1;
+		var oper;
+
+		function button1(u) {
+			s.value +=u;
+			
+		}
+
+		function operator(v) {
+			var1 = parseInt(s.value);
+			s.value="";
+			oper=v;
+		}
+
+		function equate() {
+			var2 = parseInt(s.value);
+
+			if (oper=="+") {s.value=parseInt(var1) + parseInt(var2)}
+			else if (oper=="-") {s.value=parseInt(var1) - parseInt(var2)}
+			else if (oper=="*") {s.value=parseInt(var1) * parseInt(var2)}
+		}
+
+		function off() {
+			
+		}
+
+	</script>
+</head>
+<body>
+	<table border="1">
+	<tr>
+		<td colspan="4"><input type="text" name="" id="s"></td>
+	</tr>
+	<tr>
+		<td><input type="button" name="" value="1" onclick="button1(1)"></td>
+		<td><input type="button" name="" value="2" onclick="button1(2)"></td>
+		<td><input type="button" name="" value="3" onclick="button1(3)"></td>
+		<td><input type="button" name="" value="+" onclick="operator('+')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" name="" value="4" onclick="button1(4)"></td>
+		<td><input type="button" name="" value="5" onclick="button1(5)"></td>
+		<td><input type="button" name="" value="6" onclick="button1(6)"></td>
+		<td><input type="button" name="" value="_" onclick="operator('-')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" name="" value="7" onclick="button1(7)"></td>
+		<td><input type="button" name="" value="8" onclick="button1(8)"></td>
+		<td><input type="button" name="" value="9" onclick="button1(9)"></td>
+		<td><input type="button" name="" value="*" onclick="operator('*')"></td>
+	</tr>
+	<tr>
+		<td><input type="button" name="" value="." onclick="button1(.)"></td>
+		<td><input type="button" name="" value="0" onclick="button1(0)"></td>
+		<td><input type="button" name="" value="00" onclick="button1(00)"></td>
+		<td><input type="button" name="" value="=" onclick="equate()"></td>
+	</tr>
+	</table>
+
+</body>
+</html>
